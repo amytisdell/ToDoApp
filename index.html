@@ -9,44 +9,48 @@
     <title>Week 10 Assignment</title>
   </head>
   <body class="container">
+    <h3>Employee Birthday Cake Flavor Survey</h3>
   <br> 
     <div class="card">
         <div class="card body">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-start-date">Start Date</label>
-                        <input type="date" class="form-control" id="new-start-date">
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-end-date">End Date</label>
-                        <input type="date" class="form-control" id="new-end-date">
-                    </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="employee-name">Employee Name</label>
+                    <input type="text" class="form-control" id="employee-name">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="new-task">Task</label>
-                        <input type="Task" class="form-control" id="new-task" placeholder="task">
-                    </div>
-                </div>
-                <div>
-                    <button id="add" class="btn btn-primary form-control">Create</button>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="birthday">Employee Birthday</label>
+                    <input type="date" class="form-control" id="birthday">
                 </div>
             </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="Favorite-cake-flavor">Favorite Cake Flavor</label>
+                    <input type="text" class="form-control" id="Favorite-cake-flavor">
+                </div>
+            </div>
+                <!-- <div class="col-sm">
+                    <div class="form-group">
+                        <label for="allergies">Any allergies?</label><br>
+                        <input type="radio" id="allergies" value="yes"><label for="yes">Yes</label>
+                        <input type="radio" id="allergies" value="no"> <label for="no">No</label><br>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+            <button id="add" class="btn btn-primary form-control">Submit</button>
         </div>
     </div>
 <br>
     <table id="list" class="table table-light table-striped">
         <tr>
-            <th>Task</th>
-            <th>Date Created</th>
-            <th>Start Date</th>
-            <th>Due date</th>
-            <th>Actions</th>
+            <th>Employee Name</th>
+            <th> Employee Birthday</th>
+            <th>Favorite Cake Flavor</th>
+            <!-- <th>Allergies?</th> -->
+            <th>Delete</th>
         </tr>
     </table>
 <script src="index.js"></script>
